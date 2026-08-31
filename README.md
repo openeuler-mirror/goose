@@ -1,0 +1,3 @@
+# goose
+
+An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM.
