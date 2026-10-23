@@ -1962,7 +1962,7 @@ dependencies = [
  "tokenizers 0.22.2",
  "yoke 0.8.3",
  "zerocopy",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -3792,7 +3792,7 @@ dependencies = [
  "serde_json",
  "smallvec",
  "thiserror 2.0.20",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -5243,7 +5243,7 @@ dependencies = [
  "urlencoding",
  "webbrowser",
  "winapi",
- "zip",
+ "zip 9.0.5",
 ]
 
 [[package]]
@@ -13628,7 +13628,7 @@ dependencies = [
  "rgb",
  "sha2 0.11.0",
  "thousands",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -15269,6 +15269,21 @@ dependencies = [
  "flate2",
  "indexmap 2.14.2",
  "memchr",
+ "typed-path",
+ "zopfli",
+]
+
+[[package]]
+name = "zip"
+version = "9.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6e04976da629d3b04204ba8105b396a193af8ad2583b2c79bfb3ab8af580a11e"
+dependencies = [
+ "crc32fast",
+ "flate2",
+ "indexmap 2.14.2",
+ "memchr",
+ "nix",
  "typed-path",
  "zopfli",
 ]
