@@ -2,7 +2,7 @@
 
 本地运行的开源 AI Agent。它可以安装依赖、执行命令、修改文件并验证结果，并通过命令行、桌面应用和 [Agent Client Protocol](https://agentclientprotocol.com/)（ACP）接口提供同一套能力。
 
-本仓库从上游 [aaif-goose/goose](https://github.com/aaif-goose/goose) 迁移而来，准备发布到 AtomGit，供 openEuler 社区获取源码、在本机构建和使用。当前版本 **1.54.0**，许可证为 Apache-2.0。
+本仓库从上游 [aaif-goose/goose](https://github.com/aaif-goose/goose) 迁移而来，当前版本 **1.54.0**，许可证为 Apache-2.0。
 
 ## 能做什么
 
@@ -166,8 +166,9 @@ Agent 主循环正在从 `crates/goose/src/agents/agent.rs` 迁移到 `crates/go
 
 goose 的功能设计和上游缺陷仍由原项目处理：<https://github.com/aaif-goose/goose>。向原项目贡献代码时，遵循其 [CONTRIBUTING.md](CONTRIBUTING.md) 与 [GOVERNANCE.md](GOVERNANCE.md)。
 
-## 上游与许可
+## 来源与许可证
 
-- 上游仓库：<https://github.com/aaif-goose/goose>
-- 许可证：[Apache License 2.0](LICENSE)
-- 本仓库是引入 openEuler 社区的源码副本。上游的 GitHub Release、社区频道和治理角色仍以上游仓库为准；仓库内的 [GOVERNANCE.md](GOVERNANCE.md) 与 [MAINTAINERS.md](MAINTAINERS.md) 记录的是上游维护者。
+Fork from: https://github.com/aaif-goose/goose
+
+- 许可证：[Apache License 2.0](LICENSE)（根目录 `LICENSE`，`Cargo.toml` 中 `license = "Apache-2.0"`）
+
