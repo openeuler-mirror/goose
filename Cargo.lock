@@ -1661,7 +1661,7 @@ dependencies = [
  "arrayvec",
  "cc",
  "cfg-if",
- "constant_time_eq",
+ "constant_time_eq 0.4.2",
  "cpufeatures 0.3.1",
 ]
 
@@ -1962,7 +1962,7 @@ dependencies = [
  "tokenizers 0.22.2",
  "yoke 0.8.3",
  "zerocopy",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -2516,6 +2516,15 @@ name = "constant_time_eq"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d52eff69cd5e647efe296129160853a42795992097e8af39800e1060caeea9b"
+
+[[package]]
+name = "constant_time_eq"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9eb6feb175df65d0a3ccd3e73484e940d0ac664e8034f0519fd49a93db3071d9"
+dependencies = [
+ "rustversion",
+]
 
 [[package]]
 name = "content_inspector"
@@ -3792,7 +3801,7 @@ dependencies = [
  "serde_json",
  "smallvec",
  "thiserror 2.0.20",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -5243,7 +5252,7 @@ dependencies = [
  "urlencoding",
  "webbrowser",
  "winapi",
- "zip",
+ "zip 9.8.1",
 ]
 
 [[package]]
@@ -13537,6 +13546,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8e28f89b80c87b8fb0cf04ab448d5dd0dd0ade2f8891bae878de66a75a28600e"
 
 [[package]]
+name = "typed-path"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ce898823d8cd0f028662d2f349694b1af0a5cc9be83f1d213a00d3147445e1e"
+
+[[package]]
 name = "typenum"
 version = "1.20.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -13628,7 +13643,7 @@ dependencies = [
  "rgb",
  "sha2 0.11.0",
  "thousands",
- "zip",
+ "zip 8.6.0",
 ]
 
 [[package]]
@@ -15269,7 +15284,27 @@ dependencies = [
  "flate2",
  "indexmap 2.14.2",
  "memchr",
- "typed-path",
+ "typed-path 0.12.3",
+ "zopfli",
+]
+
+[[package]]
+name = "zip"
+version = "9.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a9534624d547e3f516ecde0ed9a70d37788f01d340efcfdd03bf3ea8e163c1d0"
+dependencies = [
+ "constant_time_eq 0.6.1",
+ "crc32fast",
+ "flate2",
+ "getrandom 0.4.3",
+ "indexmap 2.14.2",
+ "libc",
+ "memchr",
+ "nix",
+ "typed-path 0.13.0",
+ "windows-sys 0.61.2",
+ "zeroize",
  "zopfli",
 ]
 
